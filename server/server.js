@@ -1,57 +1,29 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
-mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost:27017/TodoApp')
+const express = require('express')
+const bodyParser = require('body-parser')
+const { mongoose } = require('./db/mongoose')
+const { Todo } = require('./models/todo')
+const { User } = require('./models/user')
 
+const app = express()
 
-const Todo = mongoose.model('Todo', new Schema({
-  text: {
-    type: String,
-    required: true,
-    minlength: 1,
-    trim: true,
-  },
-  completed: {
-    type: Boolean,
-    default: false,
-  },
-  completedAt: {
-    type: Number,
-    default: null,
-  },
-}))
+app.use(bodyParser.json())
 
+app.post('/todos', (req, res) => {
+  console.log(req.body)
+  const todo = new Todo({
+    text: req.body.text,
+  })
 
-// const otherTodo = new Todo({})
-//
-// otherTodo.save()
-//   .then((doc) => {
-//     console.log(JSON.stringify(doc, undefined, 2))
-//   })
-//   .catch((error) => {
-//     console.log('Unable to save', error)
-//   })
-
-
-// User
-// email - require it - trim it - set type - set min length of 1
-const User = mongoose.model('User', new Schema({
-  email: {
-    type: String,
-    required: true,
-    trim: true,
-    minlength: 1,
-  },
-}))
-
-const user = new User({
-  email: 'max@example.com',
+  todo.save()
+    .then((doc) => {
+      res.send(doc)
+    })
+    .catch((error) => {
+      res.status(400).send(error)
+    })
 })
 
-user.save()
-  .then((doc) => {
-    console.log('User saved', doc)
-  })
-  .catch((error) => {
-    console.log('Unable to save user', error)
-  })
+app.listen(3000, () => {
+  console.log('Started on port 3000')
+})
+
