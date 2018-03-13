@@ -9,6 +9,9 @@
     "test": "mocha utils/**/*.test.js server/**/*.test.js spies/**/*.test.js",
     "test:watch": "nodemon --exec \"npm test\""
   },
+  "engines": {
+    "node": "9.8.0"
+  },
   "author": "Maksim Golitsyn",
   "license": "MIT",
   "repository": {

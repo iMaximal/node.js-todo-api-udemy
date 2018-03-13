@@ -45,3 +45,10 @@ Start web server:
 ````bash
 npm run dev
 ````
+
+
+### Useful commands
+
+````bash
+heroku addons:create mongolab:sandbox
+````
