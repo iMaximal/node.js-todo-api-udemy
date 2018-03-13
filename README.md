@@ -6,6 +6,11 @@ Study project.
 
 Technologies: ES6, Node.JS, Express, MongoDB.
 
+## API Demo
+
+https://pacific-ocean-12093.herokuapp.com/todos
+
+
 ## Install
 
 Install Mongo
