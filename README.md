@@ -4,7 +4,7 @@ Study project.
 
 "The Complete Node.js Developer Course (2nd Edition) " (Udemy).
 
-Technologies: ES6, Node.JS, Express, MongoDB.
+Technologies: ES6, Node.JS, Express, MongoDB, Mongoose, Lodash, Supertest, Expect, Mocha.
 
 ## API Demo
 
