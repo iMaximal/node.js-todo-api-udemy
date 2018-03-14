@@ -21,6 +21,7 @@ On Windows (in Mongo bin directory, create mongo-data before if not exist):
 ````bash
 mongod.exe --dbpath /Users/[YOUR_USER]/mongo-data
 ````
+On Mac OS do same.
 
 Create first collection
 
