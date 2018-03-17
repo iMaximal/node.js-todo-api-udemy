@@ -47,8 +47,9 @@ Autotests:
 npm test:watch
 ````
 
-Start web server:
+Start mongo (MacOS) and web server:
 ````bash
+npm run mongo
 npm run dev
 ````
 
