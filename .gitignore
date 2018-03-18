@@ -1,4 +1,5 @@
 # For this project
+server/config/config.json
 
 # Don't check auto-generated stuff into git
 coverage
@@ -11,7 +12,7 @@ stats.json
 *sublime*
 .DS_Store
 dist
-public
+/public
 manifest
 
 npm-debug.log

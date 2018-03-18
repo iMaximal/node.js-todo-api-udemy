@@ -58,4 +58,8 @@ npm run dev
 
 ````bash
 heroku addons:create mongolab:sandbox
+heroku config
+heroku config:set VAR=VALUE
+heroku config:get VAR
+heroku config:unset VAR
 ````
