@@ -1,5 +1,5 @@
 # For this project
-server/config/config.json
+/server/config/config.json
 
 # Don't check auto-generated stuff into git
 coverage
