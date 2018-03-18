@@ -17,14 +17,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iMaximal/node.js-todo-api-udem.git"
+    "url": "git+https://github.com/iMaximal/node.js-todo-api-udemy.git"
   },
   "bugs": {
-    "url": "https://github.com/iMaximal/node.js-todo-api-udem/issues"
+    "url": "https://github.com/iMaximal/node.js-todo-api-udemy/issues"
   },
-  "homepage": "https://github.com/iMaximal/node.js-todo-api-udem#readme",
+  "homepage": "https://github.com/iMaximal/node.js-todo-api-udemy#readme",
   "keywords": [
-    "node.js"
+    "node.js",
+    "todo",
+    "api"
   ],
   "dependencies": {
     "bcryptjs": "^2.4.3",
