@@ -8,7 +8,10 @@ Technologies: ES6, Node.JS, Express, MongoDB, Mongoose, Lodash, Supertest, Expec
 
 ## API Demo
 
-https://pacific-ocean-12093.herokuapp.com/todos
+Only API, not web site!
+
+https://nodejs-todo-api-udemy.herokuapp.com/todos
+
 
 
 ## Install
